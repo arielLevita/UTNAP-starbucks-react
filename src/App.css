@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bg-sbgreen {
+    background-color: #00754a;
+}
+
+.bg-sblightblue {
+    background-color: #d4e9e2;
+}
+
+.border-sbgreen {
+    border: 1px solid #00754a;
+}
+
+.text-sbgreen {
+    color: #00754a;
+}
+
+nav {
+    height: 4.5rem;
+}
+
+nav img {
+    height: 2.5rem;
+}
+
+#hiring h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+footer img {
+    height: 5rem;
+}
