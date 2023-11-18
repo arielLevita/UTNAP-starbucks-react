@@ -13,10 +13,10 @@ const Header = () => {
     console.log(show)
 
     return (
-        <header className={`bg-white border-b border-gray-300 py-4 ${show ? 'sticky w-full top-0' : ''}`}>
-            <nav>
-                <div>
-                    <div className="flex items-center px-4 md:px-12 lg:px-16">
+        <header className={` ${show ? 'sticky w-full top-0' : ''}`}>
+            <nav className="shadow shadow-slate-200 py-4">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex items-center px-5">
                         <Link className="" to={'/'}>
                             <img src="https://i.postimg.cc/XJktkb5X/starbucks-logo-3.png"
                                 alt="starbucks logo" className="h-12" />
@@ -31,8 +31,8 @@ const Header = () => {
                                 ?
                                 <div>
                                     <i className="bi bi-x-lg w-8 h-8 text-2xl"></i>
-                                    <div className="fixed border border-red-600 bg-black bg-opacity-60 top-20 right-0 w-screen h-screen overflow-hidden">
-                                        <div className="bg-white w-[80vw] h-screen ml-[auto]">
+                                    <div className="fixed bg-black bg-opacity-60 top-20 right-0 w-screen h-screen overflow-hidden">
+                                        <div className="bg-white w-[85vw] h-screen ml-[auto]">
                                             <NavbarMenu />
                                         </div>
                                     </div>

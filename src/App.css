@@ -9,28 +9,12 @@
     margin: 0 auto;
 }
 
-.bg-sbgreen {
-    background-color: #00754a;
-}
-
 .bg-sblightblue {
     background-color: #d4e9e2;
 }
 
 .border-sbgreen {
     border: 1px solid #00754a;
-}
-
-.text-sbgreen {
-    color: #00754a;
-}
-
-nav {
-    height: 4.5rem;
-}
-
-nav img {
-    height: 2.5rem;
 }
 
 #hiring h2 {
