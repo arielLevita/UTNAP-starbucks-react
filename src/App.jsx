@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu";
 import Cafe from "./components/Cafe/Cafe";
 import Admin from "./components/Admin/Admin";
 import HandleNotFound from "./components/HandleNotFound/HandleNotFound";
+import ExperienciaPage from "./components/ExperienciaPage/ExperienciaPage";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path={'/'} element={<Homepage />}/>
         <Route path={'/menu'} element={<Menu />}/>
         <Route path={'/cafe'} element={<Cafe />}/>
+        <Route path={'/experienciapage'} element={<ExperienciaPage />}/>
         <Route path={'/admin'} element={<Admin />}/>
         <Route path={'*'} element={<HandleNotFound />} />
       </Routes>

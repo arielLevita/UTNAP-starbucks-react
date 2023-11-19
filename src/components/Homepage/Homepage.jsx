@@ -6,8 +6,8 @@ const Homepage = () => {
     const banners = [
         {
             title: '¡La magia llegó a nuestras tiendas!',
-            bgColor: 'sbpink',
-            textColor: 'white',
+            bgColor: 'bg-sbpink',
+            textColor: 'text-white',
             image: 'https://i.postimg.cc/6qp1mHfc/2023-11-BANNER-WEB-0.png',
             paragraph: 'Sentí el cariño de esta temporada con tus favoritos y llena de sabor cada momento.',
             hasHashtag: true,
@@ -15,11 +15,12 @@ const Homepage = () => {
             isFlipped: false,
             hasButton: false,
             buttonText: '',
+            buttonBorder: ''
         },
         {
             title: 'Unite a algo más grande',
-            bgColor: 'sblightblue',
-            textColor: 'sbgreen',
+            bgColor: 'bg-sblightblue',
+            textColor: 'text-sbgreen',
             image: 'https://i.postimg.cc/bwnwQmzW/home-02.png',
             paragraph: 'Revisá las oportunidades que tenemos para vos',
             hasHashtag: false,
@@ -27,6 +28,7 @@ const Homepage = () => {
             isFlipped: true,
             hasButton: true,
             buttonText: 'Postular acá',
+            buttonBorder: 'border-sbgreen'
         }
     ]
 
@@ -49,6 +51,7 @@ const Homepage = () => {
                                 isFlipped={banner.isFlipped}
                                 hasButton={banner.hasButton}
                                 buttonText={banner.buttonText}
+                                buttonBorder={banner.buttonBorder}
                             />
                         ))
                     }

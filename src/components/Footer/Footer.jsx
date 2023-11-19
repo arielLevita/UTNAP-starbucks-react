@@ -1,134 +1,163 @@
-
+import FooterLinks from "../FooterLinks/FooterLinks"
 
 const Footer = () => {
+
+    const footerLinks = {
+            about: [
+                {
+                    title: 'Nuestra historia',
+                    to:''
+                },
+                {
+                    title: 'Nuestra misión',
+                    to:''
+                },
+                {
+                    title: 'Nuestra cultura inclusiva y valores',
+                    to:''
+                },
+                {
+                    title: 'Nuestro café',
+                    to:''
+                },
+                {
+                    title: 'Historias y novedades',
+                    to:''
+                },
+                {
+                    title: 'Trabaja con nosotros',
+                    to:''
+                },
+                {
+                    title: 'Comunicados oficiales',
+                    to:''
+                },
+            ],
+            social: [
+                {
+                    title: 'Planeta',
+                    to: ''
+                },
+                {
+                    title: 'Personas',
+                    to: ''
+                },
+            ],
+            client: [
+                {
+                    title: 'Contacto',
+                    to: ''
+                },
+                {
+                    title: 'Medios de pago',
+                    to: ''
+                },
+                {
+                    title: 'Defensa de las y los consumidores',
+                    to: ''
+                },
+            ],
+            experience: [
+                {
+                    title: 'Formas de comprar',
+                    to: ''
+                },
+                {
+                    title: 'Delivery',
+                    to: ''
+                }
+            ],
+            general: [
+                {
+                    title: 'Accesibilidad web',
+                    to: ''
+                },
+                {
+                    title: 'Aviso de privacidad',
+                    to: ''
+                },
+                {
+                    title: 'Condiciones de uso',
+                    to: ''
+                },
+                {
+                    title: 'Mapa del sitio',
+                    to: ''
+                },
+            ]
+        }
+
+
     return (
         <footer>
         <div className="wrapper">
-            <div className="container-lg d-flex flex-column flex-lg-row my-4">
-                <div className="accordion d-lg-none mb-4" id="accordionPanelsStayOpenExample">
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                Sobre nosotros
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse">
-                            <div className="accordion-body">
-                                <ul className="list-unstyled mx-3">
-                                    <li><a href="" className="text-dark text-decoration-none">Nuestra historia</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Nuestra misión</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Nuestra cultura inclusiva y valores</a>
-                                    </li>
-                                    <li><a href="" className="text-dark text-decoration-none">Nuestro café</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Historias y novedades</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Trabaja con nosotros</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Comunicados oficiales</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div className="flex flex-col lg:flex-row my-4">
+                <div className="lg:flex lg:justify-between leading-5">
+                    <div className="mx-4">
+                        <h6 className="my-4">Sobre nosotros</h6>
+                        <ul className="list-none space-y-4">
+                            {
+                                footerLinks.about?.map((link) => (
+                                    <FooterLinks key={link.title} title={link.title} to={link.to} />
+                                ))
+                            }
+                        </ul>
                     </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                Impacto social
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse">
-                            <div className="accordion-body">
-                                <ul className="list-unstyled mx-3">
-                                    <li><a href="" className="text-dark text-decoration-none">Planeta</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Personas</a></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div className="mx-4">
+                        <h6 className="my-4">Impacto social</h6>
+                        <ul className="list-none space-y-4">
+                            {
+                                footerLinks.social?.map((link) => (
+                                    <FooterLinks key={link.title} title={link.title} to={link.to} />
+                                ))
+                            }
+                        </ul>
                     </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Atención al cliente
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
-                            <div className="accordion-body">
-                                <ul className="list-unstyled mx-3">
-                                    <li><a href="" className="text-dark text-decoration-none">Contacto</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Medios de pago</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Defensa de las y los consumidores</a></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div className="mx-4">
+                        <h6 className="my-4">Atención al cliente</h6>
+                        <ul className="list-none space-y-4">
+                            {
+                                footerLinks.client?.map((link) => (
+                                    <FooterLinks key={link.title} title={link.title} to={link.to} />
+                                ))
+                            }
+                        </ul>
                     </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseFour">
-                                Experiencia Starbucks
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse">
-                            <div className="accordion-body">
-                                <ul className="list-unstyled mx-3">
-                                    <li><a href="" className="text-dark text-decoration-none">Formas de comprar</a></li>
-                                    <li><a href="" className="text-dark text-decoration-none">Delivery</a></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div className="mx-4">
+                        <h6 className="my-4">Experiencia Starbucks</h6>
+                        <ul className="list-none space-y-4">
+                            {
+                                footerLinks.experience?.map((link) => (
+                                    <FooterLinks key={link.title} title={link.title} to={link.to} />
+                                ))
+                            }
+                        </ul>
                     </div>
                 </div>
-                <div className="container d-none d-lg-flex justify-lg-content-between lh-lg">
-                    <ul className="list-unstyled mx-3">
-                        <h6>Sobre nosotros</h6>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Nuestra historia</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Nuestra misión</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Nuestra cultura inclusiva y valores</a>
-                        </li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Nuestro café</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Historias y novedades</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Trabaja con nosotros</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Comunicados oficiales</a></li>
-                    </ul>
-                    <ul className="list-unstyled mx-3">
-                        <h6>Impacto social</h6>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Planeta</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Personas</a></li>
-                    </ul>
-                    <ul className="list-unstyled mx-3">
-                        <h6>Atención al cliente</h6>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Contacto</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Medios de pago</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Defensa de las y los consumidores</a></li>
-                    </ul>
-                    <ul className="list-unstyled mx-3">
-                        <h6>Experiencia Starbucks</h6>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Formas de comprar</a></li>
-                        <li><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Delivery</a></li>
-                    </ul>
-                </div>
-                <div className="px-3">
-                    <img src="https://i.postimg.cc/wMxZWG52/footer-argentina.jpg" alt="" />
+
+                <div className="px-3 lg:ml-auto my-4">
+                    <img className="h-20" src="https://i.postimg.cc/wMxZWG52/footer-argentina.jpg" alt="" />
                 </div>
             </div>
-            <div className="d-block d-lg-flex flex-column align-items-center border-top mt-4 px-4">
+
+            <div className="block sm:flex flex-col items-center shadow shadow-slate-200 mt-4 px-4">
                 <div className="my-4">
-                    <i className="fs-3 bi bi-facebook mx-2"></i>
-                    <i className="fs-3 bi bi-instagram mx-2"></i>
-                    <i className="fs-3 bi bi-linkedin mx-2"></i>
+                    <i className="text-3xl bi bi-facebook mx-2"></i>
+                    <i className="text-3xl bi bi-instagram mx-2"></i>
+                    <i className="text-3xl bi bi-linkedin mx-2"></i>
                 </div>
-                <ul className="list-unstyled my-2 w-50 d-lg-flex justify-content-between mb-4">
-                    <li className="d-lg-inline-block"><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Accesibilidad web</a></li>
-                    <li className="d-lg-inline-block"><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Aviso de privacidad</a></li>
-                    <li className="d-lg-inline-block"><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Condiciones de uso</a></li>
-                    <li className="d-lg-inline-block"><a href="" className="text-dark text-decoration-none text-opacity-50 my-1">Mapa del sitio</a></li>
+                <ul className="list-none my-2 max-w-1/2 sm:flex justify-between sm:space-x-6 mb-4">
+                    {
+                        footerLinks.general?.map((link) => (
+                            <FooterLinks key={link.title} title={link.title} to={link.to} />
+                        ))
+                    }
                 </ul>
-                <h6 className="text-dark text-decoration-none text-opacity-50 mt-3 mb-0">&#169 2023. Starbucks Coffee Company. Reservados todos los derechos</h6>
-                <small className="text-dark text-decoration-none text-opacity-50 text-wrap text-break pb-3">ar | prod | 44e96568eeacba34abb9b4f72e538133b5877b273 | 01/09/2023-05:08:44:762</small>
+                <h6 className="text-gray-400 no-underline mt-3 mb-0">&#169 2023. Starbucks Coffee Company. Reservados todos los derechos</h6>
+                <small className="text-gray-400 no-underline break-words break-all pb-3">ar | prod | 44e96568eeacba34abb9b4f72e538133b5877b273 | 01/09/2023-05:08:44:762</small>
             </div>
         </div>
     </footer>

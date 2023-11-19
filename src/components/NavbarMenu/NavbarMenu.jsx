@@ -11,6 +11,10 @@ const NavbarMenu = () => {
             to: "/cafe"
         },
         {
+            title: "experiencia starbucks",
+            to: "/experienciapage"
+        },
+        {
             title: "admin",
             to: "/admin"
         },
