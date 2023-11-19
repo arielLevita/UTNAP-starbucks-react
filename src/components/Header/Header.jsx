@@ -10,7 +10,6 @@ const Header = () => {
         setShow(!show)
     }
 
-    console.log(show)
 
     return (
         <header className={` ${show ? 'sticky w-full top-0' : ''}`}>

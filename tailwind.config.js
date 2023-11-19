@@ -10,6 +10,7 @@ export default {
       colors: {
         sbgreen: "#00754a",
         sblightblue: "#d4e9e2",
+        sbpink: "#e31c79",
       }
     },
   },
