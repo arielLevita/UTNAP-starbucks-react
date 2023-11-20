@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Homepage from "./components/Homepage/Homepage";
-import Menu from "./components/Menu/Menu";
-import Cafe from "./components/Cafe/Cafe";
-import Admin from "./components/Admin/Admin";
-import HandleNotFound from "./components/HandleNotFound/HandleNotFound";
-import ExperienciaPage from "./components/ExperienciaPage/ExperienciaPage";
+import Homepage from "./routes/Homepage/Homepage";
+import Menu from "./routes/Menu/Menu";
+import Cafe from "./routes/Cafe/Cafe";
+import Admin from "./routes/Admin/Admin";
+import HandleNotFound from "./routes/HandleNotFound/HandleNotFound";
+import ExperienciaPage from "./routes/ExperienciaPage/ExperienciaPage";
+import './App.css';
 
 function App() {
 

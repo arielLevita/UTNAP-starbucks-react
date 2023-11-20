@@ -1,4 +1,4 @@
-import Banner from "../Banner/Banner"
+import Banner from "../../components/Banner/Banner"
 
 
 const ExperienciaPage = () => {
@@ -47,10 +47,10 @@ const ExperienciaPage = () => {
 
 
     return (
-        <div>
+        <section id="experienciaPage">
             <h1 className="text-white text-center text-[calc(1.2125rem+2.55vw)] font-bold bg-[#1e3933] p-12">Experiencia Starbucks</h1>
             <p className="text-center text-[calc(1.0875rem+1.05vw)] font-semibold max-w-[900px] my-16 mx-auto px-12">Para cada momento hay una forma de vivir la Experiencia Starbucks como vos quieras.</p>
-            <div className="wrapper max-w-[1400px] mx-auto">
+            <div className="wrapper">
                 <div>
                     {
                         banners.map((banner) => (
@@ -72,7 +72,7 @@ const ExperienciaPage = () => {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
