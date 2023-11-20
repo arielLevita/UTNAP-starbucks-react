@@ -2,8 +2,8 @@
 const Cafe = () => {
     return (
         <div>
-            <div className="bg-[#1e3933]">
-                <div className="md:max-w-[680px] my-4 mx-auto">
+            <div className="bg-sbdarkgreen">
+                <div className="md:max-w-[680px] mb-4 mx-auto">
                     <h1 className="text-white text-[calc(1.2125rem+2.55vw)] font-bold py-12 px-5">Nuestro Café</h1>
                 </div>
             </div>

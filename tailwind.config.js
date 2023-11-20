@@ -9,6 +9,7 @@ export default {
     extend: {
       colors: {
         sbgreen: "#00754a",
+        sbdarkgreen: "#1e3933",
         sblightblue: "#d4e9e2",
         sbpink: "#e31c79",
       }
