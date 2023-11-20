@@ -4,7 +4,7 @@ const NavbarMenu = () => {
     const navLinks = [
         {
             title: "menú",
-            to: "/"
+            to: "/menu"
         },
         {
             title: "café",

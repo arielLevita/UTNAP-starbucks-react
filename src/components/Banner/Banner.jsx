@@ -11,7 +11,7 @@ const Banner = ({title, bgColor, textColor, image, paragraph, hasHashtag, hashta
                 </div>
                 <div className="flex items-center justify-center w-full md:w-1/2 p-0">
                     <div className={`${textColor} text-center w-full p-12`}>
-                        <h2 className="text-5xl font-bold my-4">{title}</h2>
+                        <h2 className="text-[calc(1.0875rem+1.05vw)] font-bold my-4">{title}</h2>
                         <p className="text-lg my-4">{paragraph}</p>
                         {
                             hasHashtag
