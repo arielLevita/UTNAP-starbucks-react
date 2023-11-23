@@ -6,7 +6,7 @@ const Homepage = () => {
     const banners = [
         {
             title: '¡La magia llegó a nuestras tiendas!',
-            bgColor: 'bg-sbpink',
+            bgColor: 'bg-sbpink', 
             textColor: 'text-white',
             image: 'https://i.postimg.cc/6qp1mHfc/2023-11-BANNER-WEB-0.png',
             paragraph: 'Sentí el cariño de esta temporada con tus favoritos y llena de sabor cada momento.',

@@ -1,9 +1,12 @@
 import MenuItem from "../../components/MenuItem/MenuItem"
+import { useState, useEffect } from "react";
 
 
 const Menu = () => {
 
-    const menu = {
+    const [menu, setMenu] = useState([]);
+
+    /* const menu = {
         bebidas: [
             {
                 title: 'Cafés calientes',
@@ -58,8 +61,22 @@ const Menu = () => {
                 img: 'https://i.postimg.cc/q7ncxwtR/te.png'
             },
         ]
-    }
+    } */
 
+    useEffect(() => {
+        const getMenu = async () => {
+            try {
+                const response = await fetch('/menu.json');
+                const data = await response.json();
+                setMenu(data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        getMenu();
+    }, []);
+
+    console.log(menu)
 
     return (
         <div>
@@ -73,7 +90,7 @@ const Menu = () => {
                 </div>
                 <div className="flex flex-wrap mx-auto my-8">
                     {
-                        menu.bebidas.map((bebida) => (
+                        menu.bebidas?.map((bebida) => (
                             <MenuItem key={bebida.title} title={bebida.title} img={bebida.img} />
                         ))
                     }
@@ -83,7 +100,7 @@ const Menu = () => {
                 </div>
                 <div className="flex flex-wrap mx-auto my-8">
                     {
-                        menu.comidas.map((comida) => (
+                        menu.comidas?.map((comida) => (
                             <MenuItem key={comida.title} title={comida.title} img={comida.img} />
                         ))
                     }
@@ -93,7 +110,7 @@ const Menu = () => {
                 </div>
                 <div className="flex flex-wrap mx-auto my-8">
                     {
-                        menu.enCasa.map((item) => (
+                        menu.enCasa?.map((item) => (
                             <MenuItem key={item.title} title={item.title} img={item.img} />
                         ))
                     }
