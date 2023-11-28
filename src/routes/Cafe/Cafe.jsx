@@ -4,7 +4,7 @@ const Cafe = () => {
         <div>
             <div className="bg-sbdarkgreen">
                 <div className="md:max-w-[680px] mb-4 mx-auto">
-                    <h1 className="text-white text-[calc(1.2125rem+2.55vw)] font-bold py-12 px-5">Nuestro Café</h1>
+                    <h1 className="text-white text-[clamp(2rem,1.2125rem+2.55vw,3rem)] font-bold py-12 px-5">Nuestro Café</h1>
                 </div>
             </div>
             <div className="md:max-w-[680px] px-5 mt-4 mb-12 mx-auto">

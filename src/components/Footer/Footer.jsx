@@ -90,7 +90,7 @@ const Footer = () => {
 
     return (
         <footer className="border border-t-gray-300 mt-8">
-            <div className="wrapper">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row my-4">
                     <div className="lg:flex lg:justify-between leading-5">
                         <div className="mx-4">

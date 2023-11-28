@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    max-width: 1240px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ p {
 }
 
 #hero h2 {
-    font-size: calc(1.2125rem + 2.55vw) !important;
+    font-size: clamp(2rem, 1.2125rem + 2.55vw, 3rem) !important;
 }
 
 footer img {
