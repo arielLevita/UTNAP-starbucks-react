@@ -1,6 +1,7 @@
 import MenuItem from "../../components/MenuItem/MenuItem"
 import { useState, useEffect } from "react";
 
+/* Ruta 'Menu'. Importa la información necesaria para la generación de los menúes de forma dinámica a través de una función asincrónica. Almacena la información de forma temporal en una variable de estado. Utiliza el componente MenuItems para la generación de los elementos de cada menú. */
 const Menu = () => {
 
     const [menu, setMenu] = useState([]);

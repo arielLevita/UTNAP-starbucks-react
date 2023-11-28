@@ -1,4 +1,4 @@
-
+/* Ruta 'cafe'. No posee elementos dinámicos. */
 const Cafe = () => {
     return (
         <div>

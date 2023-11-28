@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+/* Este componente genera de forma dinámica el menú de vínculos de la barra de navegación del sitio. Su diseño se adapta en función de la resolución de pantalla. */
 const NavbarMenu = () => {
     const navLinks = [
         {

@@ -1,5 +1,6 @@
 import FooterLinks from "../FooterLinks/FooterLinks"
 
+/* Este componente funciona a modo de pié de página para el sitio, y se renderiza una única vez en el layout principal. Pasa los vículos necesarios al componente FooterLink de forma dinámica y obtiene los links a diferentes rutas del sitio web. */
 const Footer = () => {
 
     const footerLinks = {

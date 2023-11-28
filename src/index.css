@@ -1,5 +1,6 @@
+/* Componente de estilos raíz. Importa las dependencias de Tailwind CSS. */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 

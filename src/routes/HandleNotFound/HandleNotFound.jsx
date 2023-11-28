@@ -1,3 +1,4 @@
+/* Ruta para errores 404. Maneja las rutas que no poseen un componente de referencia */
 const HandleNotFound = () => {
     return (
         <div className="flex justify-center items-center w-screen py-24">

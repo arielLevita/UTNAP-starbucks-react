@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-
+/* El componente toma las props de las diferentes páginas que tienen banner y los genera de forma dinámica. */
 const Banner = ({title, bgColor, textColor, image, paragraph, hasHashtag, hashtag, isFlipped, hasButton, buttonText, buttonBorder}) => {
 
     return (

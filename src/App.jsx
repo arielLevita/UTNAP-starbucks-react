@@ -8,6 +8,7 @@ import HandleNotFound from "./routes/HandleNotFound/HandleNotFound";
 import ExperienciaPage from "./routes/ExperienciaPage/ExperienciaPage";
 import './App.css';
 
+/* Componente principal de la aplicación. Utiliza react-router-dom para acceder a las distintas rutas del sitio. */
 function App() {
 
   return (

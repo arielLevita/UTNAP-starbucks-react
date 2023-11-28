@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import NavbarMenu from "../NavbarMenu/NavbarMenu";
 import { useState } from "react";
 
+/* Este componente contiene la barra de navegación. Sus estilos y comportamiento se modifican en función de la resolución de pantalla. Su comportamiento se modifica a partir de una variable de estado. Contiene un elemento fijo y uno dinámico. Importa los links de navegación del compoanente NavbarMenu. */
 const Header = () => {
 
     let [show, setShow] = useState(false);

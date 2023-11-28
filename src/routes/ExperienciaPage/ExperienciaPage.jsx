@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner"
 
-
+/* Ruta 'Experiencia Starbucks'. Genera diferentes banners a partir de la exportación de props al componente Banner. */
 const ExperienciaPage = () => {
 
     const banners = [

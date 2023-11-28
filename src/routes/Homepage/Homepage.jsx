@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner"
 
-
+/* Ruta 'Homepage'. Genera diferentes banners a partir de la exportación de props al componente Banner. */
 const Homepage = () => {
 
     const banners = [
